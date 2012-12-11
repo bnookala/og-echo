@@ -1,0 +1,17 @@
+<% content_for :meta_tags do %>
+    <% @og_params.each do |key, value| %>
+        <meta name="<%= key %>" content="<%= value %>">
+    <% end %>
+<% end %>
+
+<% content_for :main_content do %>
+    <ul class="meta-tags-list">
+    <% @og_params.each do |key, value| %>
+        <li>
+            <h2>
+                <%=h "<meta name=\"#{key}\" content=\"#{value}\">" %>
+            </h2>
+        </li>
+    <% end %>
+    </ul>
+<% end %>
