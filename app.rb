@@ -1,4 +1,4 @@
-require 'CGI'
+require 'cgi'
 require 'json'
 require 'sinatra'
 require 'sinatra/content_for'
