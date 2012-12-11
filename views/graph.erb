@@ -1,6 +1,6 @@
 <% content_for :meta_tags do %>
     <% @og_params.each do |key, value| %>
-        <meta name="<%= key %>" content="<%= value %>">
+        <meta property="<%= key %>" content="<%= value %>">
     <% end %>
 <% end %>
 

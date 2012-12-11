@@ -2,7 +2,6 @@ require 'CGI'
 require 'json'
 require 'sinatra'
 require 'sinatra/content_for'
-require 'pry-remote'
 
 get '/' do
 	erb :index
